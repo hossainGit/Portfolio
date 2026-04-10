@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MD Mochaddec Hossain — Analyst · Designer · Researcher</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<div id="cur"></div>
+<div id="cur-ring"></div>
+<div class="sbar" id="sbar"></div>
+
+<!-- ══ MOBILE NAV DRAWER ═════════════════════════ -->
+<div id="mob-nav" aria-hidden="true">
+  <span class="mn-label">Navigation</span>
+  <a href="#about"      onclick="closeMobNav()">About</a>
+  <a href="#skills"     onclick="closeMobNav()">Skills</a>
+  <a href="#projects"   onclick="closeMobNav()">Work</a>
+  <a href="#experience" onclick="closeMobNav()">Experience</a>
+  <a href="#contact"    onclick="closeMobNav()">Contact</a>
+</div>
+
+<!-- ══ NAV ══════════════════════════════════════ -->
+<nav id="nav">
+  <a href="#hero" class="nav-logo">MD Mochaddec Hossain</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Work</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <!-- hamburger — only visible on mobile via CSS -->
+  <button class="nav-burger" id="burger" aria-label="Toggle menu" onclick="toggleMobNav()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ══ HERO ══════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-grid">
+
+    <div class="hero-text">
+      <p class="hero-avail rv">Available for opportunities</p>
+      <h1 class="hero-name rv" style="transition-delay:.05s">
+        Analyst<br><em>Designer</em><br>&amp; Researcher
+      </h1>
+      <p class="hero-roles rv" style="transition-delay:.1s">
+        Business Analysis · Project Management · UI/UX · System Design · <br>
+        AI/ML · Data Analysis · Full-Stack Developer
+      </p>
+      <div class="hero-sep rv" style="transition-delay:.14s"></div>
+      <a href="#projects" class="hero-cta rv" style="transition-delay:.18s">View my work &nbsp;→</a>
+    </div>
+
+    <div class="hero-img rv" style="transition-delay:.1s">
+      <img src="HeroIMG.png" alt="Mochaddec Hossain"
+        onerror="this.style.display='none';document.getElementById('hero-ph').style.display='flex'">
+      <div id="hero-ph" class="img-ph" style="display:none;position:absolute;inset:0">
+        <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.7"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        <span>HeroIMG.jpg</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ ABOUT ══════════════════════════════════════ -->
+<section id="about">
+  <div class="about-in">
+    <span class="stag rv">01 — Profile</span>
+    <h2 class="stitle rv">About Me</h2>
+    <div class="about-grid">
+
+      <div class="a-portrait rl">
+        <img src="aboutIMG.png" alt="Profile photo"
+          onerror="this.style.display='none';document.getElementById('about-ph').style.display='flex'">
+        <div id="about-ph" class="img-ph" style="display:none;position:absolute;inset:0">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.7"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+          <span>aboutIMG.jpg</span>
+        </div>
+      </div>
+
+      <div class="about-body rv">
+        <p>I am a Business Analyst and UI/UX designer with a strong foundation in full-stack development. I enjoy turning complex ideas into structured requirements, intuitive interfaces, and practical digital solutions that align user needs with business goals.</p>
+        <p>My work includes requirement analysis, system diagrams, wireframing, and web application development. I focus on clarity, usability, and thoughtful implementation so that every solution is both functional and meaningful.</p>
+        <div class="a-details">
+          <div class="di"><label>Location</label><span>Dhaka 1229, Bangladesh</span></div>
+          <div class="di"><label>Email</label><span>hossain.aiub21@gmail.com</span></div>
+          <div class="di"><label>Languages</label><span>Bangla (Native), English (Professional)</span></div>
+          <div class="di"><label>Availability</label><span>Open to opportunities</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ SKILLS ══════════════════════════════════════ -->
+<section id="skills">
+  <div class="sk-in">
+    <span class="stag rv">02 — Expertise</span>
+    <h2 class="stitle rv">Skills &amp; Tools</h2>
+    <div class="sk-grid">
+
+      <div class="sk-cat rv">
+        <span class="sk-cat-name">Business Analysis</span>
+        <ul class="sk-list">
+          <li class="ski">SRS Documentation</li>
+          <li class="ski">UX Research</li>
+          <li class="ski">SDLC</li>
+          <li class="ski">Agile Scrum</li>
+          <li class="ski">System Diagrams</li>
+          <li class="ski">Wireframing</li>
+          <li class="ski">Prototyping</li>
+          <li class="ski">DFD, UML, Use-Case Diagrams</li>
+        </ul>
+      </div>
+
+      <div class="sk-cat rv" style="transition-delay:.07s">
+        <span class="sk-cat-name">System Design &amp; Docs</span>
+        <ul class="sk-list">
+          <li class="ski">Data Flow Diagrams (DFD)</li>
+          <li class="ski">Use Case Diagrams</li>
+          <li class="ski">Database Design</li>
+          <li class="ski">Process Modeling</li>
+          <li class="ski">Requirement Traceability</li>
+          <li class="ski">Acceptance Criteria Writing</li>
+        </ul>
+      </div>
+
+      <div class="sk-cat rv" style="transition-delay:.14s">
+        <span class="sk-cat-name">Technical</span>
+        <ul class="sk-list">
+          <li class="ski">Figma</li>
+          <li class="ski">Jira</li>
+          <li class="ski">Notion &amp; draw.io</li>
+          <li class="ski">React + TypeScript</li>
+          <li class="ski">Kotlin</li>
+          <li class="ski">SQL / Python / C/C++</li>
+          <li class="ski">Firebase &amp; Git</li>
+          <li class="ski">Linux</li>
+        </ul>
+      </div>
+
+      <div class="sk-cat rv" style="transition-delay:.21s">
+        <span class="sk-cat-name">Soft Skills</span>
+        <ul class="sk-list">
+          <li class="ski soft">Analytical Thinking</li>
+          <li class="ski soft">Problem Solving</li>
+          <li class="ski soft">Attention to Detail</li>
+          <li class="ski soft">Communication</li>
+          <li class="ski soft">Presentation</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROJECTS ══════════════════════════════════════ -->
+<section id="projects">
+  <div class="pj-in">
+    <div class="pj-hd rv">
+      <div>
+        <span class="stag">03 — Selected Work</span>
+        <h2 class="stitle" style="margin-bottom:0">Projects</h2>
+      </div>
+      <div class="ftabs">
+        <button class="ftab on" onclick="doFilter('all',this)">All</button>
+        <button class="ftab" onclick="doFilter('Design',this)">Design</button>
+        <button class="ftab" onclick="doFilter('Web',this)">Web</button>
+        <button class="ftab" onclick="doFilter('App',this)">App</button>
+      </div>
+    </div>
+
+    <div class="pj-grid">
+      <div class="pc rv" data-cat="Design">
+        <div class="pc-img">
+          <img src="pIMG1.jpg" alt="Luminary Brand System"
+            onerror="this.parentElement.innerHTML='<svg width=38 height=38 viewBox=&quot;0 0 24 24&quot; fill=none stroke=&quot;#7a7268&quot; stroke-width=&quot;0.75&quot;><rect x=&quot;3&quot; y=&quot;3&quot; width=&quot;18&quot; height=&quot;18&quot; rx=&quot;2&quot;/><circle cx=&quot;8.5&quot; cy=&quot;8.5&quot; r=&quot;1.5&quot;/><path d=&quot;M21 15l-5-5L5 21&quot;/></svg>'">
+        </div>
+        <div class="pc-body">
+          <div class="ptags"><span class="ptag">Branding</span><span class="ptag">Motion</span></div>
+          <div class="ptitle">Luminary Brand System</div>
+          <div class="pdesc">Complete visual identity for a luxury wellness brand — from mark to motion.</div>
+          <div class="parrow">View project <span>→</span></div>
+        </div>
+      </div>
+
+      <div class="pc rv" data-cat="Web" style="transition-delay:.06s">
+        <div class="pc-img">
+          <img src="pIMG2.jpg" alt="Orbit Dashboard"
+            onerror="this.parentElement.innerHTML='<svg width=38 height=38 viewBox=&quot;0 0 24 24&quot; fill=none stroke=&quot;#7a7268&quot; stroke-width=&quot;0.75&quot;><rect x=&quot;3&quot; y=&quot;3&quot; width=&quot;18&quot; height=&quot;18&quot; rx=&quot;2&quot;/><circle cx=&quot;8.5&quot; cy=&quot;8.5&quot; r=&quot;1.5&quot;/><path d=&quot;M21 15l-5-5L5 21&quot;/></svg>'">
+        </div>
+        <div class="pc-body">
+          <div class="ptags"><span class="ptag">React</span><span class="ptag">D3.js</span></div>
+          <div class="ptitle">Orbit Dashboard</div>
+          <div class="pdesc">Real-time analytics platform with 3D data visualization.</div>
+          <div class="parrow">View project <span>→</span></div>
+        </div>
+      </div>
+
+      <div class="pc rv" data-cat="App" style="transition-delay:.12s">
+        <div class="pc-img">
+          <img src="pIMG3.jpg" alt="Echo Mobile App"
+            onerror="this.parentElement.innerHTML='<svg width=38 height=38 viewBox=&quot;0 0 24 24&quot; fill=none stroke=&quot;#7a7268&quot; stroke-width=&quot;0.75&quot;><rect x=&quot;3&quot; y=&quot;3&quot; width=&quot;18&quot; height=&quot;18&quot; rx=&quot;2&quot;/><circle cx=&quot;8.5&quot; cy=&quot;8.5&quot; r=&quot;1.5&quot;/><path d=&quot;M21 15l-5-5L5 21&quot;/></svg>'">
+        </div>
+        <div class="pc-body">
+          <div class="ptags"><span class="ptag">React Native</span><span class="ptag">AI</span></div>
+          <div class="ptitle">Echo Mobile App</div>
+          <div class="pdesc">Social listening app with AI-powered sentiment analysis.</div>
+          <div class="parrow">View project <span>→</span></div>
+        </div>
+      </div>
+
+      <div class="pc rv" data-cat="Web" style="transition-delay:.18s">
+        <div class="pc-img">
+          <img src="pIMG4.jpg" alt="Stratum Editorial"
+            onerror="this.parentElement.innerHTML='<svg width=38 height=38 viewBox=&quot;0 0 24 24&quot; fill=none stroke=&quot;#7a7268&quot; stroke-width=&quot;0.75&quot;><rect x=&quot;3&quot; y=&quot;3&quot; width=&quot;18&quot; height=&quot;18&quot; rx=&quot;2&quot;/><circle cx=&quot;8.5&quot; cy=&quot;8.5&quot; r=&quot;1.5&quot;/><path d=&quot;M21 15l-5-5L5 21&quot;/></svg>'">
+        </div>
+        <div class="pc-body">
+          <div class="ptags"><span class="ptag">Next.js</span><span class="ptag">CMS</span></div>
+          <div class="ptitle">Stratum Editorial</div>
+          <div class="pdesc">Digital magazine platform with dynamic typographic layouts.</div>
+          <div class="parrow">View project <span>→</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ EXPERIENCE ══════════════════════════════════════ -->
+<section id="experience">
+  <div class="ex-in">
+    <span class="stag rv">04 — Journey</span>
+    <h2 class="stitle rv">Experience</h2>
+    <div class="timeline">
+
+      <div class="ei rv">
+        <div class="ei-dot"></div>
+        <div class="ei-period">Sep 2024 — May 2025</div>
+        <div class="ei-title">Research Assistant</div>
+        <div class="ei-co">@ Dept of CSE, AIUB</div>
+      </div>
+
+      <div class="ei rv" style="transition-delay:.1s">
+        <div class="ei-dot"></div>
+        <div class="ei-period">Jun 2025 — Dec 2025</div>
+        <div class="ei-title">Business Analyst</div>
+        <div class="ei-co">@ Active Green Energy Ltd.</div>
+        <div class="ei-desc">Gathered business requirements from clients and prepared structured documentation. Created user flows, wireframes, and data flow diagrams to visualize system processes. Communicated requirements between clients and developers to ensure correct implementation.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTACT ══════════════════════════════════════ -->
+<section id="contact">
+  <div class="ct-grid">
+
+    <div class="rl">
+      <span class="stag">05 — Reach Out</span>
+      <h2 class="stitle">Let's Build<br><em style="font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--gold)">Something</em></h2>
+      <p class="ct-note">Open to freelance projects, collaborations, and full-time roles. If you have a vision, I'd love to help shape it.</p>
+      <div class="clinks">
+        <a href="mailto:hossain.aiub21@gmail.com" class="clink">
+          <span class="clink-icon">✉</span>
+          Email — hossain.aiub21@gmail.com
+        </a>
+        <a href="https://linkedin.com/in/hossain64" target="_blank" rel="noopener" class="clink">
+          <span class="clink-icon" style="font-weight:700;font-size:.64rem">in</span>
+          LinkedIn — linkedin.com/in/hossain64
+        </a>
+        <a href="https://github.com/hossainGit" target="_blank" rel="noopener" class="clink">
+          <span class="clink-icon" style="font-weight:700;font-size:.6rem">gh</span>
+          GitHub — github.com/hossainGit
+        </a>
+      </div>
+    </div>
+
+    <div class="rv">
+      <form class="cform" onsubmit="sendMsg(event)">
+        <div class="fg"><label>Your Name</label><input type="text" placeholder="Jane Smith" required></div>
+        <div class="fg"><label>Email Address</label><input type="email" placeholder="jane@example.com" required></div>
+        <div class="fg"><label>Message</label><textarea placeholder="Tell me about your project..."></textarea></div>
+        <button type="submit" class="btn-send">Send Message →</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ FOOTER ══════════════════════════════════════ -->
+<footer>
+  <span class="fcopy">© MD Mochaddec Hossain 2026<span id="strig" onclick="strigClick()"></span></span>
+  <a href="#hero" class="ftop">Back to top ↑</a>
+</footer>
+
+<!-- ══ LOGIN MODAL ══════════════════════════════════ -->
+<div id="lmodal">
+  <div class="lbox">
+    <button class="lclose" onclick="closeLogin()">×</button>
+    <div class="ltitle">Admin Access</div>
+    <div class="lsub">Restricted area</div>
+    <div class="lerr" id="lerr">Invalid credentials. Try again.</div>
+    <div class="lg"><label>Username</label><input type="text" id="lu" autocomplete="off"></div>
+    <div class="lg"><label>Password</label>
+      <input type="password" id="lp" onkeydown="if(event.key==='Enter')doLogin()">
+    </div>
+    <button class="lbtn" onclick="doLogin()">Enter →</button>
+    <p class="lhint">Default: admin / admin123</p>
+  </div>
+</div>
+
+<div id="toast"></div>
+
+<script src="script.js" defer></script>
+
+</body>
+</html>
